@@ -4,16 +4,22 @@ channels:
   - nvidia
   - conda-forge
 dependencies:
-  - python=3.10.0=h12debd9_5
-  - pytorch=2.0.1=py3.10_cuda11.8_cudnn8.7.0_0
-  - pytorch-cuda=11.8=h7e8668a_5
+  - python=3.10.0
+  - pytorch=2.0.1
+  - pytorch-cuda=11.8
   - torchaudio=2.0.2=py310_cu118
   - torchtriton=2.0.0=py310
   - torchvision=0.15.2=py310_cu118
-  - pip=23.3.1=py310h06a4308_0
+  - pip=23.3.1
   - Pillow=10.4.0
   - markupsafe=2.1.5
   - numpy=1.26.4
+  - mkl=2024.0.0
+  - opencv
+  - scipy=1.11.1
+  - tqdm
+  - pyyaml
+  - huggingface_hub=0.25
 
   - pip:
       - accelerate==0.25.0
@@ -23,8 +29,6 @@ dependencies:
       - diffusers==0.25.0
       - einops==0.7.0
       - bitsandbytes==0.39.0
-      - scipy==1.11.1
-      - opencv-python
       - gradio==4.24.0
       - fvcore
       - cloudpickle
@@ -33,3 +37,4 @@ dependencies:
       - basicsr
       - av
       - onnxruntime==1.16.2
+      - tb-nightly
