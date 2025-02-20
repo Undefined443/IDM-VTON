@@ -2,7 +2,7 @@ name: idm
 channels:
   - pytorch
   - nvidia
-  - defaults
+  - conda-forge
 dependencies:
   - python=3.10.0=h12debd9_5
   - pytorch=2.0.1=py3.10_cuda11.8_cudnn8.7.0_0
@@ -11,6 +11,9 @@ dependencies:
   - torchtriton=2.0.0=py310
   - torchvision=0.15.2=py310_cu118
   - pip=23.3.1=py310h06a4308_0
+  - Pillow=10.4.0
+  - markupsafe=2.1.5
+  - numpy=1.26.4
 
   - pip:
       - accelerate==0.25.0
